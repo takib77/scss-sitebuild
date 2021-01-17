@@ -1,4 +1,12 @@
-@function var($string, $data: $config) {
+@function var($string, $data: $grid) {
+    $keys: get-keys($string);
+    @each $key in $keys {
+        $data: map-get($data, $key);
+    }
+    @return $data;
+};
+
+@function var2($string, $data: $colors) {
     $keys: get-keys($string);
     @each $key in $keys {
         $data: map-get($data, $key);

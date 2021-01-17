@@ -1,0 +1,7 @@
+@mixin generate-colored-backgrounds($palette) {  
+    @each $key, $value in $palette {
+        .bg-#{$key} {
+            background-color: $value;
+        }
+    }
+};

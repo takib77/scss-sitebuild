@@ -3,4 +3,16 @@ body {
   padding: 0;
 }
 
+.text {
+  font-family: "Mulish", sans-serif;
+  padding: 1rem 0.25rem;
+}
+.text-btn {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Catamaran", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */

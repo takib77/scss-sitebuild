@@ -1,0 +1,6 @@
+@import "functions/functions";
+@import "mixins/mixins";
+@import "variables/variables";
+
+@include generate-colored-backgrounds(map-merge(var2(themes-#{var2(default)}), var2(base)));
+@include generate-colored-texts(map-merge(var2(themes-#{var2(default)}), var2(base)));
