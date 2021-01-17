@@ -5,19 +5,14 @@
         flex: 0 1 auto;
         flex-flow: row wrap;
         margin: 0 auto;
-        padding: var(container-padding-default);
         position: relative;
         max-width: var(container-maxWidth);
 
-        @include mobile-up {
+        @include mobile {
             padding: var(container-padding-mobile);
         }
 
-        @include tablet-up {
-            padding: var(container-padding-tablet);
-        }
-
-        @include desktop-up {
+        @include desktop {
             padding: var(container-padding-desktop);
         }
     }

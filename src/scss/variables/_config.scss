@@ -2,34 +2,26 @@ $config: (
     grid: (
         size: 12,
         breakpoint: (
-            mobile: 640px,
-            tablet: 960px,
-            desktop: 1280px
+            desktop: 992px
         )
     ),
     container: (
         classname: container,
-        maxWidth: 1280px,
+        maxWidth: 1600px,
         padding: (
-            default: 5px,
-            mobile: 6px,
-            tablet: 7.5px,
-            desktop: 9px
+            mobile: 2px,
+            desktop: 4px
         )
     ),
     column: (
         classname: col,
         postfix: (
-            default: xm,
             mobile: sm,
-            tablet: md,
             desktop: lg
         ),
         padding: (
-            default: 10px,
-            mobile: 12px,
-            tablet: 15px,
-            desktop: 18px
+            mobile: 3px,
+            desktop: 6px
         )
     )
 );
