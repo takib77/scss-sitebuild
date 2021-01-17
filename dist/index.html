@@ -4,23 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scss-sitebuild</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Mulish&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/style.css">
     <link rel="stylesheet" href="/dist/css/grid.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://kit.fontawesome.com/58718bde63.js" crossorigin="anonymous"></script>
+    <title>Scss-sitebuild</title>
 </head>
 
 <body>
+    <nav class="nav">
+        <div class="nav__container">
+            <label class="nav__hamburger-label" for="menu">
+                <span class="nav__hamburger-line"></span>
+                <span class="nav__hamburger-line"></span>
+                <span class="nav__hamburger-line"></span>
+            </label>
+            <input class="nav__hamburger-checkbox" type="checkbox" id="menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__brandlink" href="#">Start Bootstrap</a></li>
+                <li class="nav__item ml-auto"><a class="nav__link" href="#download">DOWNLOAD</a></li>
+                <li class="nav__item"><a class="nav__link" href="#features">FEATURES</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
-        <div class="col-sm-6">1</div>
-        <div class="col-lg-6">2</div>
-        <div class="textdiv">
-            <h1>Header</h1>
-            <p class="text-danger bg-success">Text</p>
-            <p class="text-btn bg-primary">Btn</p>
+        <div class="col-sm-mx-3 py-5">
+            <div class="row">
+                <div class="col-sm-6 sm-mx-5 mx-0 mt-5 bg-transparent d-flex flex-column start">
+                    <h1 class="h2 text-center text-sm-left text-white mb-5 font--header">New Age is an app
+                        landing page that will help you beautifully showcase your new mobile app, or anything else!
+                    </h1>
+                    <a href="#">START NOW FREE!</a>
+                </div>
+                <div class="col-sm-6 position-relative col-m-5 col-sm-m-0">
+                    <img src="img/phone.png" class="img-fluid" alt="Phone">
+                    <img src="img/demo-screen-1.jpg" class="img-fluid img--inner" alt="Demo-screen">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class="container-fluid bg-warning py-5 px-0">
+        <div class="col-sm-mx-3">
+            <h1 class="text-center pb-3 text--size">Discover what all thebuzz is about!</h1>
+            <h2 class="h3 text-center pb-5">Our app is available on any mobile device! Download now to get started!</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-center">
+                <a class="text-center pb-3 pr-md-5" href="#"><img class="text-center" src="img/google-play-badge.svg"
+                        style="width:300px;" alt="Google Play"></a>
+                <a class="text-center" href="#"><img class="text-center" src="img/app-store-badge.svg"
+                        style="width:300px;" alt="App Store"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" class="container-fluid bg-white py-5 px-0">
+        <div class="col-sm-mx-3">
+            <h1 class="text-center pb-3 text--size">Unlimited Features, Unlimited Fun</h1>
+            <h2 class="h3 text-center text-secondary pb-5">Check out what you can do with this app theme!</h2>
+        </div>
+        <div class="col-sm-mx-3 py-5">
+            <div class="col-sm-6 position-relative col-m-5 col-sm-m-0 d-flex mx-auto border-top pt-5">
+                <img src="img/phone.png" class="img-fluid" alt="Phone">
+                <img src="img/demo-screen-1.jpg" class="img-fluid img--inner2" alt="Demo-screen">
+            </div>
+        </div>
+        <div class="col-sm-6 offset-3 p-0 mb-5">
+            <h3 class="text-center border-left utf--icons">📱</h3>
+            <h4 class="h1 text-center">Device Mockups</h4>
+            <h5 class="h3 text-center text-secondary">Ready to use HTML/CSS devicemockups, no Photoshop required!</h5>
+        </div>
+        <div class="col-sm-6 offset-3 p-0 mb-5">
+            <h3 class="text-center border-left utf--icons">📷</h3>
+            <h4 class="h1 text-center">Flexible Use</h4>
+            <h5 class="h3 text-center text-secondary">Put an image, video, animation, oranything else in the screen!
+            </h5>
+        </div>
+        <div class="col-sm-6 offset-3 p-0 mb-5">
+            <h3 class="text-center border-left utf--icons">🎁</h3>
+            <h4 class="h1 text-center">Free to Use</h4>
+            <h5 class="h3 text-center text-secondary">As always, this theme is free todownload and use for any purpose!
+            </h5>
+        </div>
+        <div class="col-sm-6 offset-3 p-0 mb-5">
+            <h3 class="text-center border-left utf--icons">🔓</h3>
+            <h4 class="h1 text-center">Open Source</h4>
+            <h5 class="h3 text-center text-secondary">Since this theme is MIT licensed, youcan use it commercially!</h5>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div class="col-sm-mx-3 p-5 bg--image">
+            <h1 class="text-white pb-3 text--size">Stop waiting.<br>Start building.</h1>
+            <a href="#" class="btn btn-transparent text-white border border-white rounded-pill mx-auto px-5">LET'S GET
+                STARTED!</a>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid bg-warning py-5 px-0">
+        <div class="col-sm-mx-3">
+            <h1 class="text-center pb-3">We <span class="text-danger">♥</span> new friends!</h1>
+            <div class="d-flex">
+                <a class="ml-auto" href="#">
+                    <i class="fab fa-twitter fa-2x text-white bg--tw rounded-circle p-4"></i>
+                </a>
+                <a class="px-3" href="#">
+                    <i class="fab fa-facebook fa-2x text-white bg--fb rounded-circle p-4"></i>
+                </a>
+                <a class="mr-auto text-white" href="#">
+                    <i class="fab fa-google-plus fa-2x bg-danger rounded-circle p-4"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 px-0 bg--black">
+        <div class="col-sm-mx-3">
+            <h1 class="h6 text-center text-secondary pb-3">© Your Website 2018. All Rights Reserved.</h1>
+            <div class="d-flex">
+                <a class="ml-auto text-center text-secondary" href="#">Privacy</a>
+                <a class="px-3 text-center text-secondary" href="#">Terms</a>
+                <a class="mr-auto text-center text-secondary" href="#">FAQ</a>
+            </div>
         </div>
     </div>
 </body>

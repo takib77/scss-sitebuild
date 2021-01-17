@@ -1,0 +1,87 @@
+@use "variables/config-menu" as c;
+
+.nav {
+    display: flex;
+    justify-content: center;
+    
+    &__container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    
+    @media screen and (min-width: c.$breakpoint) {
+        align-items: center;
+        }
+    }   
+
+    &__list {
+      display: none;
+      flex-direction: column;
+      font-family: c.$font;
+      list-style: none;
+      margin: 0 0 auto;
+      padding: 0;
+      width: 100%;
+    
+    @media screen and (min-width: c.$breakpoint) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        }
+    }
+    &__item {
+        text-align: center;
+    }
+    &__link {
+        color: c.$link-color;
+        display: block;
+        line-height: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+
+        &:hover {      
+            color: c.$link-hover-color;
+            }
+        }
+    &__brandlink {
+        color: c.$brand-color;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1rem;
+        padding: 1rem;
+        text-decoration: none; 
+        
+        &:hover {      
+            color: c.$link-hover-color;
+            }
+    }
+    &__hamburger {
+        &-checkbox {
+            display: none;
+    
+            &:checked + .nav__list {
+                display: flex;
+            }
+        }
+        &-label {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            padding: 0.75rem;
+            width: 1.5rem;
+    
+            @media screen and (min-width: c.$breakpoint) {
+                display: none;
+                }
+        }
+        &-line {
+            background: c.$link-color;
+            display: block;
+            height: 4px;
+            width: 1.5rem;
+        }
+    }
+}
